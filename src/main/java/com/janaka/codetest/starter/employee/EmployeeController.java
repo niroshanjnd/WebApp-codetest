@@ -30,8 +30,8 @@ public class EmployeeController {
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, value ="/employee")
-	public void addEmployee(@RequestBody Employee topic) {
-		employeeService.addEmployee(topic);
+	public void addEmployee(@RequestBody Employee employee) {
+		employeeService.addEmployee(employee);
 	}
 	
 	@RequestMapping(method = RequestMethod.PUT, value ="/employee/{id}")
