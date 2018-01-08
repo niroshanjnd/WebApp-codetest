@@ -17,8 +17,8 @@ public class Employee {
 	private String lastname;
 	
 	@OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "departmentid")
-    private Department department;
+    	@JoinColumn(name = "departmentid")
+    	private Department department;
 	
 	public Employee() {}
 	
